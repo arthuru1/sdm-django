@@ -1,0 +1,11 @@
+<h1>Data SDM</h1>
+<a href="{% url 'sdm_create' %}">+ Tambah SDM</a>
+<ul>
+    {% for s in data %}
+    <li>
+        {{ s.nama }} - {{ s.jabatan }} - {{ s.alamat }}
+        <a href="{% url 'sdm_update' s.id %}">Edit</a>
+        <a href="{% url 'sdm_delete' s.id %}">Hapus</a>
+    </li>
+    {% endfor %}
+</ul>

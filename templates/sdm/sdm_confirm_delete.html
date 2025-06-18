@@ -1,0 +1,6 @@
+<h2>Yakin ingin menghapus {{ sdm.nama }}?</h2>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Ya, hapus</button>
+    <a href="{% url 'sdm_list' %}">Batal</a>
+</form>
