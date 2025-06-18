@@ -7,3 +7,4 @@ class SDM(models.Model):
 
     def __str__(self):
         return self.nama
+#perubahan di model 
