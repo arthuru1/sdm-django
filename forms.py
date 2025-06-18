@@ -5,3 +5,4 @@ class SDMForm(forms.ModelForm):
     class Meta:
         model = SDM
         fields = ['nama', 'alamat', 'jabatan']
+#uji coba perubahan
